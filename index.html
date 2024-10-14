@@ -1,26 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sigma Bows</title>
-    <style>
-        
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sigma Bows</title>
+  <link rel="icon" type="image/x-icon" href="Media/Logo.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: white;
+      font-size: medium;
+      background-color: pink;
+    }
+    div.navBar {
+      display: flex;
+      justify-items: center;
+      align-items: end;
+      gap: 50px;
+      padding: 15px;
+      width: 100%;
+    }
+    div.navBar a {
+      display: block;
+      color: white;
+      text-align: center;
+      min-width: 130px;
+      padding: 10px 10px;
+      margin-bottom: 15px;
+      background-color: #e48db1;
+      text-decoration: none;
+    }
+    div.navBar a[data-Active='true'] {
+      color: pink;
+      background-color: white;
+    }
+    div.navBar a:not([data-Active='true']):hover {
+      background-color: #b86788;
+    }
+    img.logo {
+      margin-left: 10%;
+      width: 100px;
+    }
+</style>
 </head>
 <body>
-    <div class="navBar">
-        <ul>
-            <li><a>Home</a></li>
-            <li><a>Small bows</a></li>
-            <li><a>Medium bows</a></li>
-            <li><a>Large bows</a></li>
-            <li><a>Membership</a></li>
-            <li><a></a>About Us</a></li>
-        </ul>
-    </div>
-    <div class="banner"></div>
-    <div class="productList"></div>
-
+  <div class="navBar">
+    <a data-Active="true">Home</a>
+    <a>Small bows</a>
+    <a>Medium bows</a> 
+    <a>Large bows</a>
+    <a>Membership</a> 
+    <a>About Us</a>
+    <img class="logo" src="Media/Logo.png">
+  </div>
+  <div class="banner"></div>
+  <div class="productList"></div>
 </body>
 </html>
