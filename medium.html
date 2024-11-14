@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sigma Bows</title>
+  <link rel="icon" type="image/x-icon" href="Media/Logo.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: white;
+      font-size: medium;
+      background-color: pink;
+    }
+    div.navBar {
+      display: flex;
+      justify-items: center;
+      align-items: end;
+      gap: 50px;
+      padding: 15px;
+      width: 100%;
+    }
+    div.navBar a {
+      display: block;
+      color: white;
+      text-align: center;
+      min-width: 130px;
+      padding: 10px 10px;
+      margin-bottom: 15px;
+      background-color: #e48db1;
+      text-decoration: none;
+    }
+    div.navBar a[data-Active='true'] {
+      color: pink;
+      background-color: white;
+    }
+    div.navBar a:not([data-Active='true']):hover {
+      background-color: #b86788;
+    }
+    img.logo {
+      margin-left: 10%;
+      width: 100px;
+    }
+</style>
+</head>
+<body>
+  <div class="navBar">
+    <!-- Nanti kalo ud ada page lain isi hrefnya pake nama page itu -->
+    <!-- Kl mo bikin yg putih kl halaman itu aktif itu copas yg data-Active="True" ke yg lu mau -->
+    <!-- Contoh -->
+    <!-- <a href="smallBows.html">Small bows</a> (saat diclick dibawa ke halaman small bows) -->
+    <!-- <a data-Active="true">Small bows</a> (di halaman small bows copas yg "data---" itu ke bagian a yg small bows dan ilangin hrefnya jd gbs diclik sm muncul putih)-->
+    <a href="index.html">Home</a>
+    <a href="small.html">Small Bows</a>
+    <a data-Active="true">Medium Bows</a> 
+    <a href="large.html">Large Bows</a>
+    <a href="membership.html">Membership</a> 
+    <a href="aboutUs.html">About Us</a>
+    <img class="logo" src="Media/Logo.png">
+  </div>
+  <div class="banner"></div>
+  <div class="content"></div>
+</body>
+</html>
