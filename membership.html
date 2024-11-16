@@ -46,6 +46,91 @@
       margin-left: 10%;
       width: 100px;
     }
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+    .header {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      background-color: #850944;
+      margin-left: 20px;
+      padding: 15px;
+      max-width: 300px;
+      border-radius: 30px;
+      font-size: x-large;
+      font-style: italic;
+      color: #fff1f1;
+      text-shadow: 4px 4px 8px #fff1f1;
+    }
+    .membershipContent {
+      display: flex;
+      justify-content: space-evenly;
+      align-content: center;
+      width: 100%;
+    }
+    .membershipContent > div {
+      width: 40%;
+      background-color: #14084b;
+      border-radius: 30px;
+      margin-bottom: 25px;
+    }
+    .left {
+      display: grid;
+      padding: 20px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 2fr 2fr;
+      gap: 15px;
+      height: 500px;
+      grid-template-areas: 
+      "header header"
+      "box1 box2"
+      "box3 box4";
+    }
+    .innerHeader {
+      grid-area: header;
+      text-align: center;
+      background-color: #ffc5c5;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      font-size: 20px;
+      color: #850944;
+      font-style: italic;
+      border: solid white 15px;
+      border-radius: 30px;
+    }
+    [class^='box'] {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      text-align: center;
+      font-style: italic;
+      border: solid white 15px;
+      border-radius: 30px;
+    }
+    .box1 {
+      grid-area: box1;
+      background-color: #850944;
+      color: #fff1f1;
+    }
+    .box2 {
+      grid-area: box2;
+      background-color: #ffc5c5;
+      color: #850944;
+    }
+    .box3 {
+      grid-area: box3;
+      background-color: #ffc5c5;
+      color: #850944;
+    }
+    .box4 {
+      grid-area: box4;
+      background-color: #850944;
+      color: #fff1f1;
+    }
 </style>
 </head>
 <body>
@@ -58,7 +143,21 @@
     <a href="aboutUs.html">About Us</a>
     <img class="logo" src="Media/Logo.png">
   </div>
-  <div class="banner"></div>
-  <div class="content"></div>
+  <div class="content">
+    <div class="header"><h1>Membership</h1></div>
+    <div class="membershipContent">
+      <div class="left">
+        <div class="innerHeader"><h1>Membership deals!</h1></div>
+        <div class="box1"><div><h1>50% off! For new members</h1></div></div>
+        <div class="box2"><div><h1>Seasonal discounts all year long!</h1></div></div>
+        <div class="box3"><div><h1>Seasonal discounts all year long!</h1></div></div>
+        <div class="box4"><div><h1>Birthday gifts!</h1></div></div>
+      </div>
+      <div class="right">
+        <div class="formHeader"><h1>Membership deals!</h1></div>
+
+      </div>
+    </div>
+  </div>
 </body>
 </html>
