@@ -46,11 +46,68 @@
       margin-left: 10%;
       width: 100px;
     }
+    .content {
+      display: flex;
+      padding: 20px;
+      color: #850944;
+    }
+    .img {
+      margin-top: 20px;
+      width: 50%;
+    }
+    .img img {
+      width: 100%;
+      border-radius: 15px
+    }
+    .header {
+      font-size: 40px;
+      color: #850944;
+    }
+    .subheader {
+      color: #14084b;
+    }
+    .desc {
+      padding-left: 20px;
+      width: 50%;
+    }
+    .bowDesc {
+      background-color: white;
+      padding: 15px;
+      border-radius: 15px;
+    }
+    .buy {
+      display: flex;
+      gap: 15px;
+    }
+    .quantity {
+      display: flex;
+      width: 120px;
+      background-color: white;
+      border-radius: 30px;
+      justify-content: space-evenly;
+      align-content: center;
+      font-size: larger;
+    }
+    button {
+      background-color: white;
+      border: none;
+      padding: 10px;
+      width: 30%;
+      color: #850944;
+      border-radius: 30px;
+      font-size: 30px;
+      font-style: italic;
+      font-family: 'Times New Roman', Times, serif;
+      text-shadow: 2px 2px 4px #f6cdde;
+    }
+    button:hover {
+      scale: 1.05;
+    }
 </style>
 </head>
 <body>
   <div class="navBar">
-    <a data-Active="true">Home</a>
+    <a href="index.html">Home</a>
     <a href="small.html">Small Bows</a>
     <a href="medium.html">Medium Bows</a> 
     <a href="large.html">Large Bows</a>
@@ -59,5 +116,34 @@
     <img class="logo" src="Media/Logo.png">
   </div>
   <div class="content">
-    
+    <div class="img">
+      <img src="Media/bigbows1.jpg">
+    </div>
+    <div class="desc">
+      <h1 class="header">Coquette small/medium/large bows</h1>
+      <h1 class="header subheader">Rp.42,900</h1>
+      <p>4.9⭐⭐⭐⭐⭐ | 2.7k reviews | 6.8k sold</p>
+      <br>
+      <p>Description</p>
+      <p class="bowDesc">
+        Add a touch of elegance and charm to any outfit with our Coquette Bow! Crafted from premium satin, this oversized bow 
+        exudes sophistication with a playful twist. Perfect for accessorizing hairstyles, bags, or even outfits, it's a versatile 
+        piece for any occasion—from casual brunches to glamorous evenings. Lightweight and easy to style, the Coquette Bow is the 
+        ultimate accessory to elevate your look effortlessly.
+      </p>
+      <br>
+      <h3>Quantity</h3>
+      <div class="buy">
+        <div class="quantity">
+          <p>-</p>
+          <p>0</p>
+          <p>+</p>
+        </div>
+        <h3>370 Left</h3>
+      </div>
+      <br>
+      <button>Buy now!</button>
+    </div>
   </div>
+</body>
+</html>
