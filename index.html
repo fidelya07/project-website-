@@ -48,6 +48,26 @@
     }
     .banner {
       width: 100%;
+    } 
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-height: 50px;
+      width: 100%;
+      row-gap: 20px;
+      padding: 20px 0;
+      justify-content: space-around;
+      align-content: space-between;
+    }
+    .menu {
+      width: 30%;
+    }
+    .menu:hover {
+      scale: 1.05;
+    }
+    .menu img {
+      width: 100%;
+      border-radius: 30px;
     }
 </style>
 </head>
@@ -63,5 +83,15 @@
   </div>
   <div class="banner"><img class="banner" src="Media\banner page 1.jpg"></div>
   <div class="content"></div>
+  <div class="container">
+    <div class="menu">
+      <img src="Media/home.jpg">
+    </div>
+    <div class="menu">
+      <img src="Media/home (2).jpg">
+    </div>
+    <div class="menu">
+      <img src="Media/home (3).jpg">
+    </div>
 </body>
 </html>
