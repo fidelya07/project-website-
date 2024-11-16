@@ -135,9 +135,9 @@
       <h3>Quantity</h3>
       <div class="buy">
         <div class="quantity">
-          <p>-</p>
-          <p>0</p>
-          <p>+</p>
+          <p onclick="subtract()">-</p>
+          <p id="quantity">0</p>
+          <p onclick="add()">+</p>
         </div>
         <h3>370 Left</h3>
       </div>
@@ -145,5 +145,18 @@
       <button>Buy now!</button>
     </div>
   </div>
+  <script>
+    let quantity = 0;
+    function add() {
+      quantity++;
+      document.getElementById("quantity").innerHTML = quantity;
+    }
+    function subtract() {
+      if (quantity > 0) {
+        quantity--;
+        document.getElementById("quantity").innerHTML = quantity;
+      }
+    }
+  </script>
 </body>
 </html>
