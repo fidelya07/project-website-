@@ -6,7 +6,7 @@
   <title>Sigma Bows</title>
   <link rel="icon" type="image/x-icon" href="Media/Logo.png">
   <style>
-     body {
+    body {
       margin: 0;
       font-family:'Times New Roman', Times, serif;
       color: white;
@@ -46,6 +46,47 @@
       margin-left: 10%;
       width: 100px;
     }
+    .container {
+      margin: 15px;
+    }
+    .header {
+      display: flex;
+      padding: 0;
+      justify-content: center;
+      align-content: center;
+      margin: 15px;
+      font-size: 50px;
+      font-style: italic;
+      color: #fff1f1;
+      text-shadow: 4px 4px 8px #fff1f1;
+      background-color: #14084b;
+      border-radius: 30px;
+    }
+    .aboutContent {
+      display: flex;
+      justify-content: space-evenly;
+      align-content: center;
+      flex-grow: 1;
+    }
+    .desc {
+      width: 40%;
+      background-color: #14084b;
+      border: solid white 20px;
+      border-radius: 30px;
+      margin: 15px;
+      padding: 15px;
+      text-align: justify;
+      line-height: 40px;
+      font-size: large;
+    }
+    .img {
+      width: 40%;
+    }
+    .img img {
+      width: 90%;
+      border: solid white 20px;
+      border-radius: 30px;
+    }
 </style>
 </head>
 <body>
@@ -58,7 +99,22 @@
     <a data-Active="true">About Us</a>
     <img class="logo" src="Media/Logo.png">
   </div>
-  <div class="banner"></div>
-  <div class="content"></div>
+  <div class="content">
+    <div class="container">
+      <div class="header"><h1>About Us</h1></div>
+      <div class="aboutContent">
+        <div class="desc">
+          <h3>
+            At Sigma Bows, we craft high-quality bows that blend tradition with innovation, ensuring each piece meets the needs of 
+            demure girlies at every skill level. Our passion for the bows drives us to create durable, stylish, and 
+            performance-driven products that inspire confidence in every your everyday outfits!
+          </h3>
+        </div>
+        <div class="img">
+          <img src="Media/about_us.png">
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
